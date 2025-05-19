@@ -94,3 +94,7 @@ Frontend runs at: http://localhost:3000
 - WhatsApp: Automated message delivery using pywhatkit. Make sure Chrome is set as default and logged into WhatsApp Web.
 
 - Email: Automated emails sent to HRs via Python's built-in smtplib.
+
+## Screenshots
+[Screenshot1](./SS/arch_alumnet.jpg)
+[Screenshot2](./SS/ss_alumnet.jpg)

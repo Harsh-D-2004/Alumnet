@@ -11,6 +11,7 @@ alumnet_be/__pycache__
 alumnet_be/migrations
 alumnet_be/static
 alumnet_be/media
+alumnet_be/venv
 
 **/__pycache__/
 **/.vscode/

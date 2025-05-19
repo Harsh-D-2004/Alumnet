@@ -1,0 +1,35 @@
+.management-header {
+    display: flex;
+    align-items: center;
+    background: #001529;
+    color: #fff;
+    padding: 0 24px;
+  }
+  
+  .header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-content h1 {
+    color: #fff;
+    margin: 0;
+  }
+  
+  .header-buttons button {
+    margin-left: 12px;
+  }
+  
+  .management-content {
+    padding: 24px;
+    min-height: calc(100vh - 128px); /* header 64px + footer 64px */
+    background: #f0f2f5;
+  }
+  
+  .management-footer {
+    text-align: center;
+    padding: 16px 50px;
+  }
+  

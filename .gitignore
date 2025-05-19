@@ -12,5 +12,6 @@ alumnet_be/migrations
 alumnet_be/static
 alumnet_be/media
 
-.vscode
-__pycache__
+**/__pycache__/
+**/.vscode/
+**/.DS_Store

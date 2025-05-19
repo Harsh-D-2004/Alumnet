@@ -1,0 +1,49 @@
+<!-- app.component.html -->
+<nz-layout class="app-container">
+  <!-- Sidebar -->
+  <nz-sider nzWidth="220" class="sidebar">
+    <div class="sidebar-header">
+      <h2>Chat History</h2>
+      <button nz-button nzType="primary" class="new-chat">+ New Chat</button>
+    </div>
+  </nz-sider>
+
+  <!-- Main Content -->
+  <nz-layout>
+    <nz-header class="chat-header">
+      <h1>Alumnet Chat Assistant</h1>
+      <button nz-button nzType="dashed" class="management-button"  (click)="openManagement()">Management</button>
+    </nz-header>
+
+    <nz-content class="chat-messages" #chatMessages>
+      <div *ngFor="let message of messages"
+           [ngClass]="{'user-message': message.sender === 'user', 'bot-message': message.sender === 'bot'}"
+           class="message-bubble">
+        <p>{{ message.text }}</p>
+      </div>
+
+      <div *ngIf="loading" class="message-bubble bot-message">
+        <span nz-icon nzType="sync" class="blinking-icon"></span>
+      </div>
+    </nz-content>
+
+    <nz-footer class="chat-input">
+      <nz-input-group [nzSuffix]="suffixButton">
+        <input type="text"
+               nz-input
+               placeholder="Type a message..."
+               [(ngModel)]="userInput"
+               (keydown.enter)="sendMessage()" />
+      </nz-input-group>
+      <ng-template #suffixButton>
+        <button nz-button nzType="primary" (click)="sendMessage()">
+          <span nz-icon nzType="right-circle" nzTheme="fill"></span>
+        </button>
+      </ng-template>
+    </nz-footer>
+
+    <nz-footer class="chat-footer">
+      <p>&copy; 2025 Web App Development Project (PVG College)</p>
+    </nz-footer>
+  </nz-layout>
+</nz-layout>

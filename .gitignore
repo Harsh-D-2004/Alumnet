@@ -2,6 +2,7 @@ alumnet_fe/node_modules
 alumnet_fe/dist
 alumnet_fe/build
 alumnet_fe/coverage
+alumnet_fe/.vscode
 
 alumnet_be/env
 alumnet_be/.vscode

@@ -96,5 +96,5 @@ Frontend runs at: http://localhost:3000
 - Email: Automated emails sent to HRs via Python's built-in smtplib.
 
 ## Screenshots
-[Screenshot1](./SS/arch_alumnet.jpg)
-[Screenshot2](./SS/ss_alumnet.jpg)
+![Screenshot1](./SS/arch_alumnet.jpg)
+![Screenshot2](./SS/ss_alumnet.jpg)

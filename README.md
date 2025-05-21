@@ -24,8 +24,7 @@ The system supports natural language queries and delivers relevant responses usi
 - **Databases**: Neo4j (Graph), Pinecone (Vector), FAISS  
 - **AI/LLM**: Google GenAI Gemini API  
 - **Messaging**: pywhatkit (WhatsApp), smtplib (Email)  
-- **Frontend** (Optional): React/Next.js  
-- **Deployment**: AWS / GCP  
+- **Frontend**: Angular 
 
 ---
 
